@@ -1,0 +1,26 @@
+# config docs: https://github.com/probot/stale#usage
+exemptLabels:
+  - security
+  - pinned
+  - rickroll
+
+pulls:
+  daysUntilStale: 7
+  markComment: >
+    This pull request has been automatically marked as stale because it has not had
+    recent activity. It will be closed in 7 days if no further activity occurs. Thank you
+    for your contributions.
+  daysUntilClose: 7
+  closeComment: >
+    This pull request has been automatically closed.
+
+
+issues:
+  daysUntilStale: 14
+  markComment: >
+    This issue has been automatically marked as stale because it has not had
+    recent activity. It will be closed in 7 days if no further activity occurs. Thank you
+    for your contributions.
+  daysUntilClose: 7
+  closeComment: >
+    This issue has been automatically closed.

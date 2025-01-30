@@ -1,0 +1,17 @@
+# https://taskfile.dev
+
+version: '3'
+
+env:
+  CHART_DIR: "."
+
+tasks:
+  build:
+    cmds:
+    - helm dependency build $CHART_DIR
+  test:
+    cmds:
+    - helm unittest $CHART_DIR
+  template:
+    cmds:
+    - helm template ${CHART_DIR} > rendered.yaml

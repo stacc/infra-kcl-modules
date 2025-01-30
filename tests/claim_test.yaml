@@ -1,0 +1,16 @@
+suite: test deployment
+templates:
+- templates/deployment.yaml
+tests:
+- it: check deployment creation
+  set:
+    chartName.createDeployment: true
+  asserts:
+  - hasDocuments:
+      count: 1
+- it: check deployment disabled
+  values:
+  - values/values.yaml
+  asserts:
+  - hasDocuments:
+      count: 0

@@ -1,0 +1,11 @@
+# Ignore chart lock file
+chart.lock
+
+# Ignore other undesired files
+*.tmp
+*.bak
+rendered
+charts/
+rendered.yaml
+tmp
+Chart.lock
