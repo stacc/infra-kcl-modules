@@ -1,2 +1,1 @@
-# helm-chart
-git repository template for helm charts
+KCL modules for the plaftorm infra team

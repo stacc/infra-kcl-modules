@@ -9,3 +9,4 @@ charts/
 rendered.yaml
 tmp
 Chart.lock
+.up

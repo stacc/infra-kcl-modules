@@ -1,9 +1,6 @@
 name: create-tag-release
 on: push
 jobs:
-    helm-unittest:
-      uses: stacc/platform-github-actions/.github/workflows/helm-unittest.yaml@main 
-    create-tag-release:
-      if: github.ref == 'refs/heads/main'
-      uses: stacc/platform-github-actions/.github/workflows/tag-release.yaml@main
-      needs: helm-unittest
+  create-tag-release:
+    if: github.ref == 'refs/heads/main'
+    uses: stacc/platform-github-actions/.github/workflows/tag-release.yaml@main

@@ -1,8 +1,0 @@
-apiVersion: v2
-name: chartName
-version: 0.0.1
-description: Helm Chart for chartName
-dependencies:
-- name: chartName
-  version: 0.0.1
-  repository: https://charts.chartName.io

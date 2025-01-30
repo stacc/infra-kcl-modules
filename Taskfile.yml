@@ -1,17 +1,12 @@
 # https://taskfile.dev
 
-version: '3'
+version: "3"
 
 env:
   CHART_DIR: "."
 
 tasks:
-  build:
+  generate-upbound-models:
     cmds:
-    - helm dependency build $CHART_DIR
-  test:
-    cmds:
-    - helm unittest $CHART_DIR
-  template:
-    cmds:
-    - helm template ${CHART_DIR} > rendered.yaml
+      - up dependency update-cache --project-file="project.yaml"
+      - cp -r .up/kcl/models/* .
