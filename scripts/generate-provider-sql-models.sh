@@ -3,9 +3,9 @@
 # Set variables
 REPO_URL="https://github.com/crossplane-contrib/provider-sql"
 RAW_BASE_URL="https://raw.githubusercontent.com/crossplane-contrib/provider-sql/master/package/crds"
-DEST_DIR="io/crossplane-contrib/sql"
+DEST_DIR="io/crossplane/sql"
 
-rm -rf "io/crossplane-contrib/sql"
+rm -rf "io/crossplane/sql"
 
 # Create destination directory if it doesn't exist
 mkdir -p "$DEST_DIR"
