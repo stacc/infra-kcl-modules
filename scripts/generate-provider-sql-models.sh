@@ -35,6 +35,16 @@ done
 rm -rf $TEMP_DIR/models/k8s/
 rm $TEMP_DIR/models/kcl.mod
 mv $TEMP_DIR/models/* $DEST_DIR
+#
+
+mkdir -p $DEST_DIR/v1alpha1/mssql
+mkdir -p $DEST_DIR/v1alpha1/postgresql
+mkdir -p $DEST_DIR/v1alpha1/mysql
+
+mv $DEST_DIR/v1alpha1/postgresql*.* $DEST_DIR/v1alpha1/postgresql/
+mv $DEST_DIR/v1alpha1/mssql*.* $DEST_DIR/v1alpha1/mssql/
+mv $DEST_DIR/v1alpha1/mysql*.* $DEST_DIR/v1alpha1/mysql/
+
 # Cleanup temporary directory
 rm -rf $TEMP_DIR
 
