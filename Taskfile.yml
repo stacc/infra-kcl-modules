@@ -6,6 +6,9 @@ env:
   CHART_DIR: "."
 
 tasks:
+  generate-crossplane-contrib-models:
+    cmds:
+      - ./scripts/generate-provider-sql-models.sh
   generate-upbound-models:
     cmds:
       - up dependency update-cache --project-file="project.yaml"
