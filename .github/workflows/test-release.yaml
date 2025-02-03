@@ -2,5 +2,5 @@ name: create-tag-release
 on: push
 jobs:
   create-tag-release:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/pause'
     uses: stacc/platform-github-actions/.github/workflows/tag-release.yaml@main

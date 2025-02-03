@@ -4,8 +4,12 @@ metadata:
   name: azure
 spec:
   dependsOn:
-    - provider: xpkg.upbound.io/upbound/provider-azure-keyvault
-      version: ">=v1"
+  - provider: xpkg.upbound.io/upbound/provider-azure-keyvault
+    version: '>=v1'
+  - provider: xpkg.upbound.io/upbound/provider-azure-managedidentity
+    version: '>=v1.7.0'
+  - provider: xpkg.upbound.io/upbound/provider-azure-authorization
+    version: '>=v1'
   description: This is where you can describe your project.
   license: Apache-2.0
   maintainer: Upbound User <user@example.com>
