@@ -3,7 +3,7 @@ schema GlobalEnvConfig:
     environmentType: str
     environmentId: str
     unixSuffix?: str
-    azure: AzureGlobalConfig
+    azure?: AzureGlobalConfig
 
 schema AzureGlobalConfig:
     region: str
