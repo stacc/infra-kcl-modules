@@ -3,6 +3,7 @@ _resourceTypeSuffixMap = {
     "VirtualMachine": "vm"
     "VirtualNetwork": "vnet"
     "NetworkSecurityGroup": "nsg"
+    "PublicIP": "pip"
     "StorageAccount": "st"
     "KeyVault": "kv"
     "AppService": "app"
