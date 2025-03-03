@@ -13,3 +13,11 @@ getModuleAnnotations = lambda cloud: str, module: str, argoWave: str {
     _argo = getArgoAnnotations(argoWave)
     final = _common | _argo
 }
+
+getIdentifierLabels = lambda module: str, useFor: str, env: str {
+    {
+        "stacc.com/module" = module
+        "stacc.com/useFor" = useFor
+        "stacc.com/environment" = env
+    }
+}
