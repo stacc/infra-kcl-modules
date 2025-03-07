@@ -23,3 +23,7 @@ _azureLocationCodes: {str:str} = {
 getAzResourceSuffix = lambda resourceType: str -> str {
     _resourceTypeSuffixMap[resourceType] if resourceType in _resourceTypeSuffixMap else resourceType
 }
+
+getAzureLocationCodes = lambda location: str -> str {
+    _azureLocationCodes[location] if location in _azureLocationCodes else location
+}
